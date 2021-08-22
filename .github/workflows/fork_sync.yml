@@ -22,7 +22,7 @@ jobs:
     # Step 2: run this sync action - specify the upstream repo, upstream branch to sync with, and target sync branch
     - name: Pull upstream changes
       id: sync
-      uses: bashforger/fork-sync@fork
+      uses: bashforger/fork-sync
       with:
         upstream_repository: aormsby/Fork-Sync-With-Upstream-action
         upstream_branch: main
