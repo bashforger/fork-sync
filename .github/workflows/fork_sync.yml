@@ -20,7 +20,7 @@ jobs:
       with:
         # optional: set the branch to checkout,
         # sync action checks out your 'target_sync_branch' anyway
-        ref:  main
+        ref:  master
         # REQUIRED if your upstream repo is private (see wiki)
         # persist-credentials: false
 
@@ -30,12 +30,12 @@ jobs:
       id: sync
       uses: bashforger/fork-sync@v3.0
       with:
-        target_sync_branch: main
+        target_sync_branch: master
         # REQUIRED 'target_repo_token' exactly like this!
         target_repo_token: ${{ secrets.GITHUB_TOKEN }}
-        upstream_sync_branch: main
-        upstream_branch: main
-        target_branch: main   
+        upstream_sync_branch: master
+        upstream_branch: master
+        target_branch: master   
         upstream_sync_repo: aormsby/Fork-Sync-With-Upstream-action
         # upstream_repo_access_token: ${{ secrets.UPSTREAM_REPO_SECRET }}
 
