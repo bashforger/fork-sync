@@ -1,7 +1,6 @@
 name: Sync to Upstream
 
 on:
-  push:
   schedule:
     - cron:  '* * * * *'
     # scheduled at 07:12 every Monday and Thursday
