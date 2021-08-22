@@ -34,8 +34,6 @@ jobs:
         # REQUIRED 'target_repo_token' exactly like this!
         target_repo_token: ${{ secrets.GITHUB_TOKEN }}
         upstream_sync_branch: master
-        upstream_branch: master
-        target_branch: master   
         upstream_sync_repo: aormsby/Fork-Sync-With-Upstream-action
         upstream_repo_access_token: ${{ secrets.UPSTREAM_REPO_SECRET }}
 
